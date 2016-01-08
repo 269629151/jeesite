@@ -980,7 +980,7 @@
 									onerror="continue" encoding="${project.build.sourceEncoding}">
 									<classpath refid="maven.test.classpath" />
 									<transaction src="db/sys/jeesite_${jdbc.type}.sql"/>
-									<transaction src="db/cms/jeesite_${jdbc.type}.sql"/>
+									<!-- <transaction src="db/cms/jeesite_${jdbc.type}.sql"/>
 									<transaction src="db/oa/jeesite_${jdbc.type}.sql"/>
 									<transaction src="db/gen/jeesite_${jdbc.type}.sql"/>
 									<transaction src="db/gen/example_${jdbc.type}.sql"/>
@@ -990,7 +990,7 @@
 									<transaction src="db/act/drop/activiti.${jdbc.type}.drop.identity.sql"/>
 									<transaction src="db/act/create/activiti.${jdbc.type}.create.engine.sql"/>
 									<transaction src="db/act/create/activiti.${jdbc.type}.create.history.sql"/>
-									<transaction src="db/act/create/activiti.${jdbc.type}.create.identity.sql"/>
+									<transaction src="db/act/create/activiti.${jdbc.type}.create.identity.sql"/> -->
 								</sql>
 								
 								<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="maven.test.classpath" />
@@ -1008,7 +1008,7 @@
 									</dbconfig>
 									<classpath refid="maven.test.classpath" />
 									<operation type="INSERT" src="db/sys/jeesite_data.xls" format="xls" transaction="true"/>
-									<operation type="INSERT" src="db/cms/jeesite_data.xls" format="xls" transaction="true"/>
+									<!-- <operation type="INSERT" src="db/cms/jeesite_data.xls" format="xls" transaction="true"/> -->
 									
 								</dbunit>
 								
